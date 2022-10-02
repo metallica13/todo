@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/reset.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1 class="todo-title">Список дел:</h1>
+      <ul class="todo-list">
+        <li class="todo-list-item">
+          <label>
+            <input type="checkbox" class="todo-list-input" />
+            <span class="todo-list-desc">Сделать зарядку</span>
+          </label>
+        </li>
+        <li class="todo-list-item">
+          <label>
+            <input type="checkbox" class="todo-list-input" />
+            <span class="todo-list-desc">Тренировка</span>
+          </label>
+        </li>
+        <li class="todo-list-item">
+          <label>
+            <input type="checkbox" class="todo-list-input" />
+            <span class="todo-list-desc">Завтрак</span>
+          </label>
+        </li>
+      </ul>
+      <p class="empty-message hidden">Все задачи выполнены!</p>
+      <form action="" class="todo-form">
+        <input
+          type="text"
+          class="todo-form-input"
+          placeholder="Введите задачу"
+        />
+        <button class="todo-form-button">Добавить задачу</button>
+      </form>
+      <template id="task-template">
+        <li class="todo-list-item">
+          <label>
+            <input type="checkbox" class="todo-list-input" />
+            <span></span>
+          </label>
+        </li>
+      </template>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
